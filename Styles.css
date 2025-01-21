@@ -1,0 +1,66 @@
+html{
+    background-color: black;
+}
+
+.Flag{
+    height: 400px;
+    width: 600px;
+    background-color: #FFFFFF;
+}
+
+.top{
+    background-color: #FF671F;
+    height: 133px;
+    width: 600px;
+}
+
+.middle{
+    background-color: #FFFFFF;
+    height: 133px;
+    width: 600px;
+}
+
+.bottom{
+    background-color: #046A38;
+    height: 134px;
+    width: 600px;
+    position: relative;
+    
+}
+
+.middle .chakra{
+    border: 9px solid #06038D;
+    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+    position:relative;
+    left: 40%;
+    top: 2.3%;
+    animation-name: wheel; /* Highlighted */
+    animation-iteration-count: infinite; /* Highlighted */
+    animation-duration: 10s; /* Highlighted */
+    animation-timing-function: linear;
+}
+
+
+.middle .chakra .center .spoke{
+    position: absolute;
+    width: 2px;
+    height: 102px;
+    background-color: #06038D;
+    top: 4.5%;
+    left: 50%;
+    transform-origin: center;
+}
+
+
+ 
+@keyframes wheel {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
